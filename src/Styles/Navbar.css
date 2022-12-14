@@ -1,26 +1,19 @@
-       
-.a{
-    width: 150px;
-    height: 40px;
-    border: none;
-    transition: 1000ms;
-    font-size:  25px;
-}
-.b{
-    width: 100px;
-    height: 20px;
-    border: none;
-    transition: 1000ms;
-    font-size:  25px;
-}
-.c{
-    width: 100px;
-    height: 20px;
-    border: none;
-    transition: 1000ms;
-    font-size:  25px;
-   
-}
 
+.nav{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #676e74;
+    font-size:  18px;
+    font-weight: 600;
+    
+}
+.nav div{
+    margin-top: 25px;
+    margin: auto;
+   transition: 100ms;
+    height: 25px;
+}
+.navcolor:hover{
+    border-bottom: 2px solid #4ea819 ;
+}
 
 
