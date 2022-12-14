@@ -7,8 +7,8 @@ import Employe from './Pages/EmployeePage';
 function App() {
   return (
     <div className="App">
-    <Employe/>
-      {/*<MainRoutes/>*/}
+   
+      <MainRoutes/>
     </div>
   );
 }

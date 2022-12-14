@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1450px;
+    font-family: "source-code-pro",sans-serif;
+}
+
+.addProject-container
+{
+    width: 100%;
+    background-color:#ebecec;
+    
+}
+
+
+/* ===============blue box code ====================*/
+
+.blueBelt-nav-container{
+    background-color:#2693f8 ;
+    width: 90%;
+    margin: auto;
+}
+.blueBelt-nav>h5{
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 2%;
+}
+.blueBelt-nav{
+    margin: auto;
+    width: 85%;
+    background-color:#2693f8 ;
+    color: white;
+    padding: 2% ;
+
+   
+}
+.blueBelt-nav-items
+{
+    
+    display: flex;
+    row-gap: 10px;
+    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blueBelt-nav-items>span{
+    border: 1px solid white;
+    padding: 5px 6px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 18px;
+   
+
+    
+
+}
+.blueBelt-nav-items>span:hover{
+    background-color:white ;
+    border: 1px solid black;
+    color:#2693f8;
+    cursor:default;
+}
+
+
+/* ======buttons container code======== */
+
+.buttons-container{
+    border: 1px solid red;
+    margin: auto;
+    width: 90%;
+
+}
+
+.buttons-box Button{
+    background-color: #4ea819;
+    font-size: 14px;
+    font-weight: 600px;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
