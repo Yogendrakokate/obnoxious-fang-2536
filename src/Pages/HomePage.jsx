@@ -7,8 +7,11 @@ const HomePage = () => {
         <Link to="/login">
             <h1>Login</h1>
         </Link>
-            <Link to="/Signup">
+        <Link to="/Signup">
             <h1>Singup</h1>
+            </Link>
+            <Link to="/AddProject">
+            <h1>Add Project</h1>
             </Link>
         </>
        
