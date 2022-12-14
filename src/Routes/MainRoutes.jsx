@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom"
 import React from 'react'
 import HomePage from "../Pages/HomePage"
-import Login from "../Pages/Login"
-import Signup from "../Pages/Signup";
 import AddProject from "../Pages/Projects/AddProject";
+import Login from "../Pages/jeevan/Login"
+import Signup from "../Pages/jeevan/Signup"
+
 
 
 const MainRoutes = () => {

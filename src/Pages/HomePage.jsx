@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Freetrial from "../Component/Freetrial";
+import Employe from "./EmployeePage";
 const HomePage = () => {
     return (
         <>
-             <h1>Homepage</h1>
+            <h1>Homepage</h1>
+           <Employe/>
         <Link to="/login">
             <h1>Login</h1>
         </Link>
