@@ -1,8 +1,10 @@
 import "../Styles/Navbar.css";
+import { useNavigate } from "react-router-dom";
 export default function Navbar() {
+  const navigate = useNavigate();
   return (
     <div>
-      <div>
+      <div className="stick">
         <div
           style={{ width: "100%", height: "4px", backgroundColor: "#4ea819" }}
         ></div>
@@ -15,9 +17,16 @@ export default function Navbar() {
             gap: "50px",
           }}
         >
-          <div style={{ width: "35%", height: "100%" }}>
+          <div
+            onClick={() => navigate("/")}
+            style={{ width: "35%", height: "100%" }}
+          >
             <img
-              style={{ marginTop: "27px", marginLeft: "50px" }}
+              style={{
+                marginTop: "27px",
+                marginLeft: "50px",
+                cursor: "pointer",
+              }}
               src="https://desktime.com/static/logo/logo-dark-without-padding.svg"
               alt=""
             />
@@ -31,14 +40,27 @@ export default function Navbar() {
               display: "flex",
             }}
           >
-            <div className="navcolor">Demo</div>
-            <div className="navcolor">Features</div>
-            <div className="navcolor">Pricing</div>
-            <div className="navcolor">About us</div>
-            <div className="navcolor">FAQ</div>
-            <div className="navcolor">Blog</div>
+            <div style={{ cursor: "pointer" }} className="navcolor">
+              Demo
+            </div>
+            <div style={{ cursor: "pointer" }} className="navcolor">
+              Features
+            </div>
+            <div style={{ cursor: "pointer" }} className="navcolor">
+              Pricing
+            </div>
+            <div style={{ cursor: "pointer" }} className="navcolor">
+              About us
+            </div>
+            <div style={{ cursor: "pointer" }} className="navcolor">
+              FAQ
+            </div>
+            <div style={{ cursor: "pointer" }} className="navcolor">
+              Blog
+            </div>
             <div>
               <button
+                onClick={() => navigate("/login")}
                 style={{
                   width: "70px",
                   height: "35px",
@@ -48,6 +70,7 @@ export default function Navbar() {
                   color: "#676e74",
                   fontSize: "15px",
                   fontWeight: "600",
+                  cursor: "pointer",
                 }}
               >
                 LOGIN
@@ -55,6 +78,7 @@ export default function Navbar() {
             </div>
             <div>
               <button
+                onClick={() => navigate("/Signup")}
                 style={{
                   width: "77px",
                   height: "37px",
@@ -64,12 +88,26 @@ export default function Navbar() {
                   color: "white",
                   fontSize: "15px",
                   fontWeight: "600",
+                  cursor: "pointer",
                 }}
               >
                 SIGN UP
               </button>
             </div>
-            <div>EN</div>
+            <div>
+              <select
+                style={{
+                  width: "45px",
+                  height: "30px",
+                  border: "none",
+                  boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+                }}
+              >
+                <option value="EN">EN</option>
+
+                <option value="Espanol">Espanol</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
