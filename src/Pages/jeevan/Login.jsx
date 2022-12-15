@@ -1,25 +1,127 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {border, Box,Button,Input,Text,GridItem,Grid,Image} from '@chakra-ui/react'
+import React, { useState,useEffect } from "react";
+import { Link, Navigate } from "react-router-dom";
+import {
+  border,
+  Box,
+  Button,
+  Input,
+  Text,
+  GridItem,
+  Grid,
+  Image,
+  Alert,
+  AlertIcon,
+  useToast,
+} from "@chakra-ui/react";
+import {} from "@chakra-ui/icons";
 
 const Login = () => {
-    return (
-        <Box>
-            <Box w="400px" h="480px" border="1px solid red" m="auto" >
-                <Text textAlign="center" color="#333c43" fontWeight="bolder !important" fontSize="2.625rem" mb="30px">Log in to DeskTime</Text>
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [done, setDone] = useState(false);
+  const [loginerrorcheck, setLoginErrorcheck] = useState(false);
+  const toast = useToast();
+  let info = JSON.parse(localStorage.getItem("userData"));
+  console.log("info", info);
+  const handleLoginEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+  const handleLogin = () => {
+    info.map((ele) =>
+      ele.email === email && ele.password === password
+        ? setDone(true)
+        : setLoginErrorcheck(true)
+    );
+   
+  };
+  console.log("done",loginerrorcheck);
+  useEffect(() => {
+    if (loginerrorcheck) {
+      toast({
+        title: "please enter correct email and password !",
+        status: "error",
+        isClosable: true,
+        position: "top",
+      });
+    }
+   
+  }, [loginerrorcheck])
+ 
 
-                <label>Email</label>
-                <Input placeholder="Type in your email address" mb="30px" />
-                <label>Password</label>
-                <Input placeholder="Type in your password" mb="30px" />
-                <Button backgroundColor="#4EA819" border="#43762b" color="#FFFFFF" w="100%" mb="30px">LOGIN</Button>
-                <Text textAlign="center" fontWeight="bolder !important" mb="20px" >I forget my password</Text>
-                <Text textAlign="center">Dont have an account yet?<Link to="/Signup" fontWeight="bold" >Sign up here!</Link></Text>
+  if (done) {
+    return <Navigate to="/" />;
+  }
 
+  return (
+    <Box>
+      <Box w="400px" h="480px" m="auto">
+        <Text
+          textAlign="center"
+          color="#333c43"
+          fontWeight="bolder !important"
+          fontSize="2.625rem"
+          mb="30px"
+        >
+          Log in to DeskTime
+        </Text>
 
-            </Box>
-            <Box>
-        <Text textAlign="center" mt="20px">
+        <label>Email</label>
+        <Input
+          placeholder="Type in your email address"
+          mb="30px"
+          type="email"
+          value={email}
+          onChange={handleLoginEmail}
+          border="1px solid #999da1"
+          mt="10px"
+        />
+
+        {/* {loginerrorcheck && (
+          <Alert status="error" h="30px" background="none" border="1px solid black">
+            <AlertIcon />
+            There was an error processing your request
+          </Alert> */}
+        {/* )} */}
+        <label>Password</label>
+        <Input
+          placeholder="Type in your password"
+          mb="30px"
+          type="password"
+          value={password}
+          onChange={handlePassword}
+          mt="10px"
+        />
+        {/* {loginerrorcheck && (
+          <Alert status="error" h="30px" background="none" border="1px solid black" mb="20px">
+            <AlertIcon />
+            There was an error processing your request
+          </Alert> */}
+        {/* )} */}
+        <Button
+          backgroundColor="#4EA819"
+          border="1px solid #43762b"
+          color="#FFFFFF"
+          w="100%"
+          mb="30px"
+          onClick={handleLogin}
+        >
+          LOGIN
+        </Button>
+        <Text textAlign="center" fontWeight="bolder !important" mb="20px">
+          I forget my password
+        </Text>
+        <Text textAlign="center">
+          Dont have an account yet?
+          <Link to="/Signup" fontWeight="bold">
+            Sign up here!
+          </Link>
+        </Text>
+      </Box>
+      <Box>
+        <Text textAlign="center" mt="20px" fontWeight="bold">
           or connect with us
         </Text>
         <Grid
@@ -27,7 +129,6 @@ const Login = () => {
           gap={6}
           w="400px"
           h="200px"
-          border="1px solid red"
           m="auto"
           mt="30px"
           pt="100px"
@@ -77,13 +178,8 @@ const Login = () => {
           </GridItem>
         </Grid>
       </Box>
+    </Box>
+  );
+};
 
-           
-            
-            
-        </Box>
-        
-    )
-}
-
-export default Login
+export default Login;

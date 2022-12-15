@@ -12,6 +12,8 @@ import {
     Button,
     Input,
     Stack,
+    Text,
+    Image,
     Radio,
     RadioGroup,
 } from '@chakra-ui/react'
@@ -28,17 +30,22 @@ function DrawerExample() {
         </Button>
         <Drawer
           isOpen={isOpen}
-          placement='right'
+          placement='left'
           onClose={onClose}
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader>  <Text>Time Tesla</Text></DrawerHeader>
   
             <DrawerBody>
-              <Input placeholder='Type here...' />
+                        <Text>Dashboard</Text>
+                        <Text>MyDeskTime</Text>
+                        <Text>Team Member</Text>
+                        <Text> Colleagues</Text>
+                        <Text>Projects</Text>
+                        <Text>Work Schedules</Text>
             </DrawerBody>
   
             <DrawerFooter>
