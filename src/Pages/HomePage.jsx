@@ -1,6 +1,8 @@
 import React from "react";
 import "../Styles/HomePage.css";
+import { useNavigate } from "react-router-dom";
 const HomePage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -31,6 +33,7 @@ const HomePage = () => {
             placeholder="Your work email"
           />
           <button
+            onClick={() => navigate("/Signup")}
             style={{
               width: "180px",
               height: "46px",
@@ -72,6 +75,7 @@ const HomePage = () => {
         <img src="Home5.jpg" alt="" />
       </div>
       <button
+        onClick={() => navigate("/features")}
         style={{
           width: "210px",
           height: "50px",

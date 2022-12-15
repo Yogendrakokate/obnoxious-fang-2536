@@ -40,22 +40,46 @@ export default function Navbar() {
               display: "flex",
             }}
           >
-            <div style={{ cursor: "pointer" }} className="navcolor">
+            <div
+              onClick={() => navigate("/demo")}
+              style={{ cursor: "pointer" }}
+              className="navcolor"
+            >
               Demo
             </div>
-            <div style={{ cursor: "pointer" }} className="navcolor">
+            <div
+              onClick={() => navigate("/features")}
+              style={{ cursor: "pointer" }}
+              className="navcolor"
+            >
               Features
             </div>
-            <div style={{ cursor: "pointer" }} className="navcolor">
+            <div
+              onClick={() => navigate("/pricing")}
+              style={{ cursor: "pointer" }}
+              className="navcolor"
+            >
               Pricing
             </div>
-            <div style={{ cursor: "pointer" }} className="navcolor">
+            <div
+              onClick={() => navigate("/about")}
+              style={{ cursor: "pointer" }}
+              className="navcolor"
+            >
               About us
             </div>
-            <div style={{ cursor: "pointer" }} className="navcolor">
+            <div
+              onClick={() => navigate("/faq")}
+              style={{ cursor: "pointer" }}
+              className="navcolor"
+            >
               FAQ
             </div>
-            <div style={{ cursor: "pointer" }} className="navcolor">
+            <div
+              onClick={() => navigate("/blog")}
+              style={{ cursor: "pointer" }}
+              className="navcolor"
+            >
               Blog
             </div>
             <div>
