@@ -52,7 +52,7 @@ const Login = () => {
  
 
   if (done) {
-    return <Navigate to="/" />;
+    return <Navigate to="/Information" />;
   }
 
   return (
