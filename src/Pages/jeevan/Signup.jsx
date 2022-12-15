@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, NavLink } from "react-router-dom";
 import {
   Box,
   Button,
@@ -15,6 +15,8 @@ import {
   AlertTitle,
   AlertDescription,
   AlertIcon,
+  ButtonGroup,
+  useToast,
 } from "@chakra-ui/react";
 import { CheckIcon, ViewIcon } from "@chakra-ui/icons";
 let getData = JSON.parse(localStorage.getItem("userData"));
@@ -28,8 +30,11 @@ const Signup = () => {
   const [alert2, setAlert2] = useState(false);
   const [alert3, setAlert3] = useState(false);
   const [view, setView] = useState(false);
+  const [load, setLoad] = useState(false);
 
   const [data, setData] = useState([]);
+  const [move, setMove] = useState(false);
+  const toast = useToast();
   // JSON.parse(localStorage.getItem("userData"))
   const handleChange1 = (e) => {
     setText1(e.target.value);
@@ -76,6 +81,28 @@ const Signup = () => {
     setTimeout(() => {
       setText3("");
     }, 500);
+    if (text1.length > 5 && text2.length > 6 && text3.length > 5) {
+      setLoad(true);
+    }
+
+    setTimeout(() => {
+      if (text1.length > 5 && text2.length > 6 && text3.length > 5) {
+        setMove(true);
+        setLoad(false);
+      }
+    }, 5000);
+    setTimeout(() => {
+      if (text1.length > 5 && text2.length > 6 && text3.length > 5) {
+        toast({
+          title: "Account created.",
+          description: "We've created your account for you. Please login now",
+          status: "success",
+          duration: 9000,
+          isClosable: { load },
+          position: "top",
+        });
+      }
+    }, 3000);
   };
   useEffect(() => {}, [text1]);
 
@@ -84,6 +111,11 @@ const Signup = () => {
   const handleview = () => {
     setView((prev) => !prev);
   };
+  console.log("move", move);
+
+  if (move) {
+    return <Navigate to="/Login" />;
+  }
 
   return (
     <Box fontFamily="Source sanse pro,sans-serif">
@@ -99,22 +131,27 @@ const Signup = () => {
         Start tracking your productivity in less than a minute!
       </Text>
       <Box
-        border="1px solid red"
         w="400px"
         m="auto"
-        h="400px"
+        h="450px"
         fontFamily="Source sanse pro,sans-serif"
+        pt="10px"
       >
         <label style={{ textAlign: "left" }}>First and Last</label>
         <InputGroup>
           <Input
-            placeholder="Enter amount"
+            placeholder="Enter your full name"
             onChange={handleChange1}
             value={text1}
             type="text"
+            mt="10px"
+            mb="20px"
+            border="1px solid #999da1"
           />
           {text1.length > 5 && (
-            <InputRightElement children={<CheckIcon color="green.500" />} />
+            <InputRightElement
+              children={<CheckIcon color="green.500" mt="15px" />}
+            />
           )}
         </InputGroup>
         {alert1 && (
@@ -126,13 +163,18 @@ const Signup = () => {
         <label style={{ marginTop: "30px" }}>Email</label>
         <InputGroup>
           <Input
-            placeholder="Enter amount"
+            placeholder="Enter your email "
             onChange={handleChange2}
             value={text2}
             type="email"
+            mt="10px"
+            mb="20px"
+            border="1px solid #999da1"
           />
           {text2.length > 6 && (
-            <InputRightElement children={<CheckIcon color="green.500" />} />
+            <InputRightElement
+              children={<CheckIcon color="green.500" mt="15px" />}
+            />
           )}
         </InputGroup>
         {alert2 && (
@@ -144,10 +186,13 @@ const Signup = () => {
         <label textAlign="center">Password</label>
         <InputGroup>
           <Input
-            placeholder="Enter amount"
+            placeholder="Enter your password"
             onChange={handleChange3}
             value={text3}
             type={view ? "text" : "password"}
+            mt="10px"
+            mb="20px"
+            border="1px solid #999da1"
           />
           <InputRightElement
             children={
@@ -156,6 +201,7 @@ const Signup = () => {
                 border="none"
                 background="none"
                 onClick={handleview}
+                mt="20px"
               >
                 <ViewIcon color="green.500" />
               </Button>
@@ -163,7 +209,9 @@ const Signup = () => {
           />
           d
           {text3.length > 5 && (
-            <InputRightElement children={<CheckIcon color="green.500" />} />
+            <InputRightElement
+              children={<CheckIcon color="green.500" mt="15px" />}
+            />
           )}
         </InputGroup>
         {alert3 && (
@@ -176,10 +224,16 @@ const Signup = () => {
         <Button
           w="400px"
           onClick={handleClick}
+          isLoading={load}
           disabled={text1 === "" && text2 === "" && text3 === ""}
+          background="#4EA819"
+          border="1px solid #43762b"
+          color="#FFFFFF"
+          mt="30px"
         >
           SIGN UP FOR FREE
         </Button>
+
         <Text mt="20px">
           Try free for 14 days. No credit card required. By signing up, you
           agree to our
@@ -193,17 +247,22 @@ const Signup = () => {
             privacy policy.{" "}
           </a>{" "}
         </Text>
-      </Box>
-      <Box>
         <Text textAlign="center" mt="20px">
-          or connect with us
+          Already have account please{" "}
+          <NavLink to="/Login" fontWeight="bold" color="blue">
+            login here
+          </NavLink>
+        </Text>
+      </Box>
+      <Box mt="30px" pt="70px">
+        <Text textAlign="center" fontWeight="bold">
+          Or connect with us
         </Text>
         <Grid
           templateColumns="repeat(5, 1fr)"
           gap={6}
           w="400px"
           h="200px"
-          border="1px solid red"
           m="auto"
           mt="30px"
           pt="100px"
