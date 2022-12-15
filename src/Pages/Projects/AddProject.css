@@ -3,12 +3,14 @@
     padding: 0;
     max-width: 1450px;
     font-family: "source-code-pro",sans-serif;
+   
 }
 
 .addProject-container
 {
     width: 100%;
     background-color:#ebecec;
+    min-height: 500px;
     
 }
 
@@ -29,7 +31,7 @@
 }
 .blueBelt-nav{
     margin: auto;
-    width: 85%;
+    width: 90%;
     background-color:#2693f8 ;
     color: white;
     padding: 2% ;
@@ -67,10 +69,19 @@
 /* ======buttons container code======== */
 
 .buttons-container{
-    border: 1px solid red;
+
+    /* border: 1px solid red; */
     margin: auto;
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+   
 
+}
+.buttons-container h5{
+    font-size: 26px;
+    line-height: 31px;
 }
 
 .buttons-box Button{
@@ -80,4 +91,47 @@
     line-height: 16px;
     text-transform: uppercase;
     border-radius: 4px;
+    height: 40px;
+    width: 125px;
+    border: 1px solid #43762b;
 }
+.q-box{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999da1;
+    color: #475056;
+    cursor: pointer;
+
+}
+.buttons-box{
+    display: flex;
+    gap: 18px;
+}
+
+
+/* =====================about-project-model================ */
+
+.about-project-model-head{
+    background-color: #4ea819;
+    color: white;
+
+}
+.about-project-model-content{
+    /* border: 1px solid red; */
+   font-size:  16px; 
+   line-height: 26.5px;
+}
+.about-project-model-button{
+    background-color: #4ea819;
+    color: white;
+    border: 1px solid #999da1;
+    height: 40px;
+    width: 74px;
+}
+
+/* ============================ADD Project PopUp Model ============================== */
+
