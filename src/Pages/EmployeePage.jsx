@@ -5,7 +5,8 @@ import Freetrial from "../Component/Freetrial"
 const Employe = () => {
     return (
         <>
-            <Freetrial/>
+            <Freetrial />
+            
         </>
     )
 }
