@@ -37,8 +37,8 @@ function Information() {
     }
   return (
     <Box backgroundColor="#FCFCFD" w="100%" h="100%">
-    <Box w="500px" h="620px" m="auto" border="1px solid red">
-        <Text textAlign="center" color="#333c43" fontWeight="extrabold" fontSize="20px" fontFamily="Source sans pro,sans serif">Tell us about your team</Text>
+    <Box w="500px" h="620px" m="auto" pt="150px">
+        <Text textAlign="center" color="#333c43" fontWeight="extrabold" fontSize="20px" fontFamily="Source sans pro,sans serif" >Tell us about your team</Text>
         <Text p="10px">Help us get to know you better for an even more seamless DeskTime experience. You can later update this information in your account settings.</Text>
         
         <label style={{color:"#70777b",fontSize:".875rem",fontWeight:"600"}}>What's the name of your organization?</label>
