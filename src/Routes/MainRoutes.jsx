@@ -6,6 +6,7 @@ import Login from "../Pages/jeevan/Login"
 import Signup from "../Pages/jeevan/Signup"
 import Information from "../Pages/jeevan/Information";
 import Usefor from "../Pages/jeevan/Usefor";
+import Desktime from "../Pages/jeevan/Desktime";
 
 
 
@@ -19,6 +20,7 @@ const MainRoutes = () => {
         <Route path="/AddProject" element={<AddProject />}></Route>
         <Route path="/Information" element={<Information />}></Route>
         <Route path="/Usefor" element={<Usefor />}></Route>
+        <Route path="/Desktime" element={<Desktime />}></Route>
       </Routes>
     </div>
   )

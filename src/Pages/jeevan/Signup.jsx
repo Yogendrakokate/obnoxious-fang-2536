@@ -118,7 +118,7 @@ const Signup = () => {
   }
 
   return (
-    <Box fontFamily="Source sanse pro,sans-serif">
+    <Box fontFamily="Source sanse pro,sans-serif" boxSizing="border-box" m="0" p="0">
       <Text
         fontWeight="bold"
         fontSize="32px"
