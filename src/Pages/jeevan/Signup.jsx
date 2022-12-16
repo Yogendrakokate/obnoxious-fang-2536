@@ -118,7 +118,7 @@ const Signup = () => {
   }
 
   return (
-    <Box fontFamily="Source sanse pro,sans-serif">
+    <Box fontFamily="Source sanse pro,sans-serif" boxSizing="border-box" m="0" p="0">
       <Text
         fontWeight="bold"
         fontSize="32px"
@@ -133,7 +133,7 @@ const Signup = () => {
       <Box
         w="400px"
         m="auto"
-        h="450px"
+        h="550px"
         fontFamily="Source sanse pro,sans-serif"
         pt="10px"
       >
@@ -160,7 +160,7 @@ const Signup = () => {
             <AlertTitle>Please! Enter more than 5 character</AlertTitle>
           </Alert>
         )}
-        <label style={{ marginTop: "30px" }}>Email</label>
+        <label>Email</label>
         <InputGroup>
           <Input
             placeholder="Enter your email "
@@ -254,8 +254,8 @@ const Signup = () => {
           </NavLink>
         </Text>
       </Box>
-      <Box mt="30px" pt="70px">
-        <Text textAlign="center" fontWeight="bold">
+      <Box mt="30px" pt="20px" w="400px" m="auto">
+        <Text textAlign="center" fontWeight="bold" mt="30px">
           Or connect with us
         </Text>
         <Grid

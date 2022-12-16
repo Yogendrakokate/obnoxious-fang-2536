@@ -52,11 +52,11 @@ const Login = () => {
  
 
   if (done) {
-    return <Navigate to="/" />;
+    return <Navigate to="/Information" />;
   }
 
   return (
-    <Box>
+    <Box boxSizing="border-box" m="0" p="0">
       <Box w="400px" h="480px" m="auto">
         <Text
           textAlign="center"
