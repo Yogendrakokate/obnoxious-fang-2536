@@ -9,7 +9,7 @@ function Usefor() {
     // console.log("hhddd")
   };
   if (move) {
-    return <Navigate to="/" />;
+    return <Navigate to="/Desktime" />;
   }
   return (
     <Box backgroundColor="#ebece" pt="20px">

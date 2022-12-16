@@ -1,6 +1,11 @@
 
 .App {
   /* text-align: center; */
+  /* boxSizing="border-box" m="0" p="0"
+   */
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
 }
 .App-logo {
   height: 40vmin;
