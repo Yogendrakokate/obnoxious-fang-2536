@@ -8,6 +8,12 @@ import Information from "../Pages/jeevan/Information"
 import Usefor from "../Pages/jeevan/Usefor"
 import Desktime from "../Pages/jeevan/Desktime"
 
+import Information from "../Pages/jeevan/Information";
+import Usefor from "../Pages/jeevan/Usefor";
+import Desktime from "../Pages/jeevan/Desktime";
+
+
+
 
 const MainRoutes = () => {
   return (
