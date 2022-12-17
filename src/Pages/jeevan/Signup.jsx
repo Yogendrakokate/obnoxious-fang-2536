@@ -17,7 +17,7 @@ import {
   AlertIcon,
   ButtonGroup,
   useToast,
-} from "@chakra-ui/react";
+} from "@chakra-ui/react"
 import { CheckIcon, ViewIcon } from "@chakra-ui/icons";
 let getData = JSON.parse(localStorage.getItem("userData"));
 

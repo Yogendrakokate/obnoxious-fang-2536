@@ -1,16 +1,16 @@
 import { Routes, Route } from "react-router-dom"
 import React from 'react'
 import HomePage from "../Pages/HomePage"
-import AddProject from "../Pages/Projects/AddProject";
+import AddProject from "../Pages/Projects/AddProject"
 import Login from "../Pages/jeevan/Login"
 import Signup from "../Pages/jeevan/Signup"
 import Information from "../Pages/jeevan/Information"
 import Usefor from "../Pages/jeevan/Usefor"
 import Desktime from "../Pages/jeevan/Desktime"
 
-import Information from "../Pages/jeevan/Information";
-import Usefor from "../Pages/jeevan/Usefor";
-import Desktime from "../Pages/jeevan/Desktime";
+// import Information from "../Pages/jeevan/Information";
+// import Usefor from "../Pages/jeevan/Usefor";
+// import Desktime from "../Pages/jeevan/Desktime";
 
 
 
