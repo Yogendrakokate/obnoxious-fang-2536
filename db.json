@@ -1,0 +1,25 @@
+{
+  "member": [
+    {
+      "name": "Yogendra Kokate",
+      "email": "xyz@gmail.com",
+      "team": "Team 3",
+      "id": 5
+    }
+  ],
+  "team": [
+    {
+      "team_name": "abcteam",
+      "date": "16-12-2022",
+      "id": 1
+    }
+  ],
+  "project": [
+    {
+      "name": "coolproject",
+      "estimated_time": "25",
+      "hour_rate": "12",
+      "id": 1
+    }
+  ]
+}

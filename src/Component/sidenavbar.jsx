@@ -44,7 +44,7 @@ function DrawerExample() {
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
-          <DrawerContent  bg='black'>
+          <DrawerContent  bg='Black' className="drawer">
             <DrawerCloseButton />
                     <DrawerHeader>
                         <HStack>
@@ -59,18 +59,18 @@ function DrawerExample() {
                         </DrawerHeader>
   
                     <DrawerBody>
-                        <Link to="/Signup"><HStack w='180px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBarChart} /></Box> <Box><Text fontSize='lg' color='white'>Dashboard</Text></Box></HStack></Link>
+                        <Link to="/Signup"><HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBarChart} /></Box> <Box><Text fontSize='lg' color='white'>Dashboard</Text></Box></HStack></Link>
                         
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7}  as={FcSelfServiceKiosk} /></Box> <Box><Text fontSize='lg' color='white'>My DeskTime</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBusinessman} /></Box> <Box><Text fontSize='lg' color='white'>Team Members</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcCustomerSupport} /></Box> <Box><Text fontSize='lg' color='white'>Colleagues</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcSurvey} /></Box> <Box><Text fontSize='lg' color='white'>Projects</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcWorkflow} /></Box> <Box><Text fontSize='lg' color='white'>Work Schedules</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcApproval} /></Box> <Box><Text fontSize='lg' color='white'>Booking</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcCalendar} /></Box> <Box><Text fontSize='lg' color='white'>Absence Calendar</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcNews} /></Box> <Box><Text fontSize='lg' color='white'>Reports</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcExport} /></Box> <Box><Text fontSize='lg' color='white'>Exports</Text></Box></HStack>
-                        <HStack w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcMoneyTransfer} /></Box> <Box><Text fontSize='lg' color='white'>Billing</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7}  as={FcSelfServiceKiosk} /></Box> <Box><Text fontSize='lg' color='white'>My DeskTime</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBusinessman} /></Box> <Box><Text fontSize='lg' color='white'>Team Members</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcCustomerSupport} /></Box> <Box><Text fontSize='lg' color='white'>Colleagues</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcSurvey} /></Box> <Box><Text fontSize='lg' color='white'>Projects</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcWorkflow} /></Box> <Box><Text fontSize='lg' color='white'>Work Schedules</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcApproval} /></Box> <Box><Text fontSize='lg' color='white'>Booking</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcCalendar} /></Box> <Box><Text fontSize='lg' color='white'>Absence Calendar</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcNews} /></Box> <Box><Text fontSize='lg' color='white'>Reports</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcExport} /></Box> <Box><Text fontSize='lg' color='white'>Exports</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcMoneyTransfer} /></Box> <Box><Text fontSize='lg' color='white'>Billing</Text></Box></HStack>
                         
             </DrawerBody>
   
