@@ -10,7 +10,6 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  Box,
   Button,
   useDisclosure,
   Input,
