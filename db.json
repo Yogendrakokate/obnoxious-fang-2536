@@ -1,25 +1,11 @@
 {
   "member": [
     {
-      "name": "sdv",
-      "email": "svdsdv",
-      "team": "Team 2",
+      "name": "Yogendra Kokate",
+      "email": "ykokate953@gmail.com",
+      "team": "Team 1",
       "arrival": "9",
-      "id": 3
-    },
-    {
-      "name": "Ypgendra",
-      "email": "snvjlsv",
-      "team": "Team 1",
-      "arrival": "12",
-      "id": 4
-    },
-    {
-      "name": "Ypgendra",
-      "email": "snvjlsv",
-      "team": "Team 1",
-      "arrival": "12",
-      "id": 5
+      "id": 1
     }
   ],
   "team": [

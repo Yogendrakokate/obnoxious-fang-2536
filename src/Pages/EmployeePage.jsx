@@ -19,7 +19,7 @@ const Employe = () => {
                 
                 <div className="datemem">
 
-                <div><input type="date" /> </div>
+                <div><input type="date" className="dateE" /> </div>
                     <div><ReturnFocus /></div> 
                     
                 </div>

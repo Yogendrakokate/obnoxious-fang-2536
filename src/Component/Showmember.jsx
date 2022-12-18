@@ -12,7 +12,7 @@ const Showmember = () => {
         if (dataname.length == 0) {
             dispatch(getname())
         }
-    },[dataname.length,dispatch,])
+    },[dataname.length,dispatch])
    
     console.log(dataname)
     return (

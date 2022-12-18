@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import DrawerExample from "../../Component/sidenavbar";
 import { getname } from "../../Redux/AppReducer/action";
+
 function Desktime() {
   const { id } = useParams()
   const dispatch = useDispatch()
@@ -161,7 +162,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 ARRIVAL TIME
               </Text>
-              <Text>{mem.arrival}</Text>
+              <Text >{mem.arrival}</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
