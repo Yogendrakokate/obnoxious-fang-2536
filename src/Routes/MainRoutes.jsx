@@ -25,7 +25,7 @@ const MainRoutes = () => {
         <Route path="/AddProject" element={<AddProject />}></Route>
         <Route path="/Information" element={<Information />}></Route>
         <Route path="/Usefor" element={<Usefor />}></Route>
-        <Route path="/Desktime" element={<Desktime />}></Route>
+        <Route path="/Desktime/:id" element={<Desktime />}></Route>
       </Routes>
     </div>
   )

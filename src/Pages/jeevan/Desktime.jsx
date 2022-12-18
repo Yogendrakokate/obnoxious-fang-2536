@@ -1,8 +1,31 @@
 import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { memo } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router";
 import DrawerExample from "../../Component/sidenavbar";
+import { getname } from "../../Redux/AppReducer/action";
 
 function Desktime() {
+  const { id } = useParams()
+  const dispatch = useDispatch()
+  const dataname = useSelector((store) => store.AppReducer.name)
+  const [mem, setmem] = useState({})
+
+  useEffect(() => {
+    if (dataname.length == 0) {
+      dispatch(getname())
+    }
+  }, [dataname.length, dispatch])
+  
+  useEffect(() => {
+    if (id) {
+      const dataa = dataname.find((item) => item.id === Number(id))
+      dataa && setmem(dataa) 
+    }
+  }, [id])
+  console.log(mem,"yu")
+
   return (
     <>
       <Box display="flex" w="100%">
@@ -139,6 +162,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 ARRIVAL TIME
               </Text>
+              <Text >{mem.arrival}</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -149,6 +173,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 LEFT TIME
               </Text>
+              <Text>{Number(mem.arrival)+9}</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -159,6 +184,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 PRODUCTIVE TIME
               </Text>
+              <Text>9:HRS</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -169,6 +195,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 DESK TIME
               </Text>
+              <Text>9:HRS</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -179,6 +206,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 TIME AT WORK
               </Text>
+              <Text>9:HRS</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -189,6 +217,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 PLACE IN GRP
               </Text>
+              <Text>6</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -199,6 +228,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 EFFECTIVNESS
               </Text>
+              <Text>80%</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -209,6 +239,7 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 PRODUCTIVITY
               </Text>
+              <Text>70%</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"

@@ -170,7 +170,6 @@ table, th, td {
   .addteam{
     display: flex;
     width: 100%;
-    border: 1px solid black;
     margin-top: 2%;
     margin-bottom: 2%;
     justify-content:space-between;
@@ -183,10 +182,10 @@ table, th, td {
    font-weight:400;
    line-height:31.2px;
    color:rgb(51, 60, 67);
+   margin-top: 5%;
   }
   .datemem{
     display: flex;
-    border: 1px solid black;
     width: 25%;
     justify-content: space-around;
   }
@@ -260,4 +259,6 @@ table, th, td {
     color:#D9534F;
     
   }
-   
+.dateE{
+    margin-top: 15%;
+}

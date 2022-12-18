@@ -12,7 +12,7 @@ const Showmember = () => {
         if (dataname.length == 0) {
             dispatch(getname())
         }
-    },[dataname.length,dispatch,])
+    },[dataname.length,dispatch])
    
     console.log(dataname)
     return (
@@ -32,7 +32,7 @@ const Showmember = () => {
                 {dataname.length > 0 && dataname.map((item) => (
                
                 
-                    <tr><Membercart id={item.id} name={item.name} email={item.email} team={item.team} /> </tr>
+                    <tr><Membercart id={item.id} name={item.name} email={item.email} team={item.team} arrival={item.arrival} /> </tr>
        )
           
            )}
