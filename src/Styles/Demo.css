@@ -1,0 +1,7 @@
+.div1{
+    display: flex;
+    gap: 20px;
+}
+.div1 img{
+    width: 100%;
+}

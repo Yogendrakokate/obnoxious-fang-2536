@@ -1,0 +1,22 @@
+
+.nav{
+    font-family: "Source Sans Pro", sans-serif;
+    color: #676e74;
+    font-size:  18px;
+    font-weight: 600;
+    
+}
+.nav div{
+    margin-top: 25px;
+    margin: auto;
+   transition: 100ms;
+    height: 25px;
+}
+.navcolor:hover{
+    border-bottom: 2px solid #4ea819 ;
+   
+}
+
+
+
+
