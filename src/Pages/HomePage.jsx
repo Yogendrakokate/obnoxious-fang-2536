@@ -1,7 +1,27 @@
 import React from "react";
-<<<<<<< HEAD
 import "../Styles/HomePage.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Freetrial from "../Component/Freetrial";
+import Employe from "./EmployeePage";
+// const HomePage = () => {
+//   return (
+//       <>
+//           <h1>Homepage</h1>
+//          <Employe/>
+//       <Link to="/login">
+//           <h1>Login</h1>
+//       </Link>
+//       <Link to="/Signup">
+//           <h1>Singup</h1>
+//           </Link>
+//           <Link to="/AddProject">
+//           <h1>Add Project</h1>
+//           </Link>
+//       </>
+     
+//   )
+// }
 const HomePage = () => {
   const navigate = useNavigate();
   return (
@@ -10,31 +30,7 @@ const HomePage = () => {
         style={{
           marginTop: "65px",
           width: "100%",
-          height: "350px",
-=======
-import { Link } from "react-router-dom";
-import Freetrial from "../Component/Freetrial";
-import Employe from "./EmployeePage";
-const HomePage = () => {
-    return (
-        <>
-            <h1>Homepage</h1>
-           <Employe/>
-        <Link to="/login">
-            <h1>Login</h1>
-        </Link>
-        <Link to="/Signup">
-            <h1>Singup</h1>
-            </Link>
-            <Link to="/AddProject">
-            <h1>Add Project</h1>
-            </Link>
-        </>
-       
-    )
-}
->>>>>>> be29f4a9150c0772f4147588232201d765370f01
-
+          height: "350px", 
           display: "flex",
         }}
       >
