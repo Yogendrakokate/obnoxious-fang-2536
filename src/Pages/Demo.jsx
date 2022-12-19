@@ -1,7 +1,10 @@
 import "../Styles/Demo.css";
+import Navbar from "./Navbar";
 export default function Demo() {
   return (
+    
     <div>
+      <Navbar/>
       <div style={{ width: "100%" }}>
         <div>
           <img src="demo1.jpg" alt="" />

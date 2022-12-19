@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/HomePage.css";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import Freetrial from "../Component/Freetrial";
 import Employe from "./EmployeePage";
@@ -25,7 +26,8 @@ import Employe from "./EmployeePage";
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <>
+      <>
+          <Navbar/>
       <div
         style={{
           marginTop: "65px",

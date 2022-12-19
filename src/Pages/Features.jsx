@@ -1,6 +1,9 @@
+import Navbar from "./Navbar";
+
 export default function Features() {
   return (
     <div>
+      <Navbar/>
       <div style={{ width: "100%" }}>
         <img src="feature1.jpg" alt="" />
       </div>

@@ -1,3 +1,7 @@
+import Navbar from "./Navbar";
+
 export default function Pricing() {
-  return <div></div>;
+  return <div>
+    <Navbar/>
+  </div>;
 }

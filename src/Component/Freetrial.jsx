@@ -24,7 +24,7 @@ const Freetrial = ()=> {
             <div className="navft">
                 <div className="navft1">
                     <div><DrawerExample   /></div>
-                    <div><h1><input type="text" placeholder="search" /></h1></div>
+                    <div></div>
                  
                     
                 </div>
