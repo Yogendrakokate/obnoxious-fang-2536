@@ -20,7 +20,7 @@ import Desktime from "../Pages/jeevan/Desktime"
 // import Information from "../Pages/jeevan/Information";
 // import Usefor from "../Pages/jeevan/Usefor";
 // import Desktime from "../Pages/jeevan/Desktime";
-import EmployeePage from "../Pages/EmployeePage"
+import Employe from "../Pages/EmployeePage"
 
 
 
@@ -42,8 +42,9 @@ const MainRoutes = () => {
         <Route path="/AddProject" element={<AddProject />}></Route>
         <Route path="/Information" element={<Information />}></Route>
         <Route path="/Usefor" element={<Usefor />}></Route>
-        <Route path="/Desktime" element={<Desktime />}></Route>
-        <Route path="/EmployeePage" element={<EmployeePage />}></Route>
+        <Route path="/Desktime/:id" element={<Desktime />}></Route>
+        <Route path="/EmployeePage" element={<Employe />}></Route>
+        
 
       
         {/* EmployeePage.jsx */}

@@ -1,3 +1,7 @@
+import Navbar from "./Navbar";
+
 export default function FAQ() {
-  return <div></div>;
+  return <div>
+    <Navbar/>
+  </div>;
 }

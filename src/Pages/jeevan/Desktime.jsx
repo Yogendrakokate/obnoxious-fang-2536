@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { memo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
+import Freetrial from "../../Component/Freetrial";
 import DrawerExample from "../../Component/sidenavbar";
 import { getname } from "../../Redux/AppReducer/action";
 
@@ -28,22 +29,9 @@ function Desktime() {
 
   return (
     <>
+      <Freetrial/>
       <Box display="flex" w="100%">
-        <Box
-          w="17%"
-          h="1000px"
-          border="1px solid red"
-          position="fixed"
-          background="#333C43"
-        >
-          <Image
-            src="https://i.ibb.co/s5Mc5s5/TESla-clock-1.jpg"
-            w="40%"
-            h="70px"
-            m="auto"
-            alt="logo"
-          />
-        </Box>
+        
 
         <Box
           backgroundColor="#ebecec"
@@ -54,41 +42,7 @@ function Desktime() {
           fontFamily="Source sans pro,sans serif"
           ml="250px"
         >
-          <Box h="150px" border="1px solid red" mb="30px" background="#FFFFFF">
-            <Box
-              h="70px"
-              border="1px solid red"
-              w="100%"
-              background="#4EA819"
-              pb="20px"
-            >
-              <DrawerExample />
-              <Text textAlign="center">
-                Free trial 14-days{" "}
-                <button
-                  style={{
-                    border: "2px solid #C2C5C7",
-                    width: "150px",
-                    background: "#FFFFFF",
-                  }}
-                >
-                  Subscribe now
-                </button>{" "}
-                <button
-                  style={{
-                    border: "2px solid #FFFFFF",
-                    width: "100px",
-                    fontSize: "13px",
-                    color: "#FFFFFF",
-                    borderRadius: "3px",
-                    height: "30px",
-                  }}
-                >
-                  Book demo
-                </button>
-              </Text>
-            </Box>
-          </Box>
+         
 
           <Box
             w="88%"
@@ -158,11 +112,15 @@ function Desktime() {
             </Grid>
           </Box>
           <Grid templateColumns="repeat(4, 1fr)" gap={4} w="90%" m="auto">
+
             <GridItem w="90%" h="150" backgroundColor="#FFFFFF">
               <Text mb="62px" p="6px">
                 ARRIVAL TIME
               </Text>
-              <Text >{mem.arrival}</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }} >{mem.arrival}</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -173,7 +131,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 LEFT TIME
               </Text>
-              <Text>{Number(mem.arrival)+9}</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>{Number(mem.arrival)+9}</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -184,7 +145,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 PRODUCTIVE TIME
               </Text>
-              <Text>9:HRS</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>9:HRS</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -195,7 +159,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 DESK TIME
               </Text>
-              <Text>9:HRS</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>9:HRS</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -206,7 +173,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 TIME AT WORK
               </Text>
-              <Text>9:HRS</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>9:HRS</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -217,7 +187,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 PLACE IN GRP
               </Text>
-              <Text>6</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>6</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -228,7 +201,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 EFFECTIVNESS
               </Text>
-              <Text>80%</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>80%</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"
@@ -239,7 +215,10 @@ function Desktime() {
               <Text mb="62px" p="6px">
                 PRODUCTIVITY
               </Text>
-              <Text>70%</Text>
+              <Text fontSize='4xl' color='green' style={{
+                textAlign: "center",
+                marginTop:"-25%"
+                  }}>70%</Text>
               <Image
                 src="https://desktime.com/static/app/employee/employee-empty-arrival-time.svg"
                 alt="shape"

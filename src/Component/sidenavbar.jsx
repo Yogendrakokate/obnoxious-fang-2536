@@ -59,10 +59,11 @@ function DrawerExample() {
                         </DrawerHeader>
   
                     <DrawerBody>
-                        <Link to="/Signup"><HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBarChart} /></Box> <Box><Text fontSize='lg' color='white'>Dashboard</Text></Box></HStack></Link>
+                        <Link to="/Desktime/:id"><HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBarChart} /></Box> <Box><Text fontSize='lg' color='white'>Dashboard</Text></Box></HStack></Link>
                         
-                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7}  as={FcSelfServiceKiosk} /></Box> <Box><Text fontSize='lg' color='white'>My DeskTime</Text></Box></HStack>
-                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBusinessman} /></Box> <Box><Text fontSize='lg' color='white'>Team Members</Text></Box></HStack>
+                        <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcSelfServiceKiosk} /></Box> <Box><Text fontSize='lg' color='white'>My DeskTime</Text></Box></HStack>
+                        <Link to="/EmployeePage"><HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcBusinessman} /></Box> <Box><Text fontSize='lg' color='white'>Team Members</Text></Box></HStack></Link>
+                        
                         <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcCustomerSupport} /></Box> <Box><Text fontSize='lg' color='white'>Colleagues</Text></Box></HStack>
                         <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcSurvey} /></Box> <Box><Text fontSize='lg' color='white'>Projects</Text></Box></HStack>
                         <HStack className="dashboard" w='250px' h='10' spacing='14px' borderRadius="1px solid black"><Box><Icon w={10} h={7} as={FcWorkflow} /></Box> <Box><Text fontSize='lg' color='white'>Work Schedules</Text></Box></HStack>
