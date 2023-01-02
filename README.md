@@ -30,7 +30,7 @@ JavaScript : 88.0%
 * This is the main landing page of our website. Here clicking on any option on the Navbar will redirect the user to the respective  Page.
 * It is fully functional and responsive.
 
-![name-of-you-image](![image](https://user-images.githubusercontent.com/101565730/210247558-c7b8dced-a1f7-478e-bea1-63e85550e0d7.png))
+![name-of-you-image](![image]![image](https://user-images.githubusercontent.com/101565730/210248960-392fa208-3f85-4a05-b651-b36bf1c1258d.png)))
 ## Sign In From -
 
 * Here we have a sign in window, if visiter existing user then he can sign in by entering his/her credential like email and password 
@@ -54,10 +54,9 @@ JavaScript : 88.0%
 
 ## Our Team Members:-
 *  <a href="https://github.com/ashwiniradkar123">Yogendra Kokate<a/>
-
 * <a href="https://github.com/jeevan-aloor">Jeevan Aloor<a/>
 * <a href="https://github.com/tirthorajbadhei">Tirthoraj Badhei<a/>
-  *  <a href="https://github.com/NitinGautam09">Nitin Gautam<a/>
+*  <a href="https://github.com/NitinGautam09">Nitin Gautam<a/>
 
 
 ## Learnings -
