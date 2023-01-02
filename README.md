@@ -35,7 +35,7 @@ JavaScript : 88.0%
 
 * Here we have a sign in window, if visiter existing user then he can sign in by entering his/her credential like email and password 
 * After filling corect creadential user will be redirect to the home page proceed further.
-![name-of-you-image](![image](![image](https://user-images.githubusercontent.com/101565730/210247760-9ae314b7-4b45-4e2c-ae8e-3f8ec12bf29b.png))
+![name-of-you-image](https://user-images.githubusercontent.com/101565730/210249698-45a73e72-ad57-4ec9-850d-533c74968bfe.png)
 
 ## Sign Up From -
 
@@ -43,12 +43,13 @@ JavaScript : 88.0%
 * After clicking on need a new account, user will redirected to the sign up page
 * here user will get a from to fill
 * After creating new account he will be redirected to the home page to proceed further
-![name-of-you-image](![image](https://user-images.githubusercontent.com/101565730/210247662-c6d0128c-789e-4c81-a34a-5de2d2f518d3.png))
+![name-of-you-image](https://user-images.githubusercontent.com/101565730/210249812-fc8e131c-555f-4cdb-af92-9118fcdd74b9.png)
+))
 
 
 ## Product Page  -
 * In this paga user will be able to see produts.
-![name-of-you-image](![image](https://user-images.githubusercontent.com/101565730/210247995-bbdb2629-946e-4eae-838c-34a6b05ad1e8.png))
+![name-of-you-image](https://user-images.githubusercontent.com/101565730/210249934-f477c883-f81d-4f42-ad3e-f83dd3210a1c.png)
 
 
 
